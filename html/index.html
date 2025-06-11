@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | JHF_Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/ofertas.css">
+    <link rel="stylesheet" href="../css/depoimentos.css">
+    <link rel="stylesheet" href="../css/marcas.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <style>
+        nav ul li:first-child a {
+            border-bottom: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <!-- START OF NAVBAR -->
+            <div class="navbar">
+                <div class="logo"> 
+                    <a href="index.html"><img src="../img/logo.png" alt="" width="50px"></a> <!--Alterar o alt-->
+                </div>
+
+                <nav>
+                    <ul id="menuItens">
+                        <li><a href="index.html" title="">Início</a></li>
+                        <li><a href="produto.html" title="">Productos</a></li>
+                        <li><a href="sobre.html" title="">Sobre</a></li>
+                        <li><a href="contacto.html" title="">Contactos</a></li>
+                        <li><a href="login-cadastro.html" title="">Minha Conta</a></li>
+                    </ul>
+                </nav>
+
+                <a href="carrinho.html" title="" class="carrinho-de-compras" >
+                    <img src="../img/carrinho.png" alt="carrinho-de-compras" width="30px" height="30px"> 
+                </a>
+                <img src="../img/menu.png" alt="menu-hamburguinho" class="menu-celular" onclick="menucelular()">
+            </div>
+            <!-- END OF NAVBAR -->
+
+            <!-- START OF BANNER TEXT -->
+            <div class="linha">
+                <div class="col-2">
+                    <h1>Qualidade e <br> Confiabilidade em Cada Produto</h1>
+                    <p>Tecnologia de cofiança, qualidade superior <br>garantido a melhor experiência para você.</p>
+                    <br><a href="productos.html" class="btn">Explore &#8594;</a>
+                </div>
+
+                <div class="col-2">
+                    <img src="../img/banner-1.png" alt="">
+                </div>
+            </div>
+            <!-- END OF BANNER TEXT -->
+        </div>
+    </section>
+
+    <!-- START OF FEATURED CATEGORIES -->
+    <section class="categorias">
+        <div class="corpo-categorias">
+            <div class="linha">
+                <div class="col-3">
+                    <img src="../img/categoria-1.jpg" alt=""> <!-- alterar o alt-->
+                </div>
+                <div class="col-3">
+                    <img src="../img/categoria-2.jpg" alt=""> <!-- alterar o alt-->
+                </div>
+                <div class="col-3">
+                    <img src="../img/categoria-3.jpg" alt=""> <!-- alterar o alt-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF FEATURED CATEGORIES -->
+
+    <!-- START OF FEATURED PRODUCTS -->
+    <section class="productos">
+        <section class="corpo-categorias">
+            <h2 class="titulo">Productos em Destaque</h2>
+    
+            <!--  INÍCIO LINHA DO CORPPO DOS PRODUCTOS EM DESTAQUE-->
+            <div class="linha">
+                <!-- INÍCIO ITEM PRODUCTOS EM DESTAQUE -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="1" src="../img/produtos/galeria-1/produto-1.PNG" alt="Apple iPhone 12 mini">
+                    </a>
+                    <h4>Apple IPhone 12 mini</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>795 000,00 AOA</p>
+                </div>
+                <!-- FIM ITEM PRODUCTOS EM DESTAQUE -->
+    
+                <!-- INÍCIO ITEM PRODUCTOS EM DESTAQUE -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="2" src="../img/produtos/galeria-2/produto-1.PNG" alt="iPhone 13">
+                    </a>
+                    <h4>iPhone 13</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>946 000,00 AOA</p>
+                </div>
+                <!-- FIM ITEM PRODUCTOS EM DESTAQUE -->
+    
+                <!-- INÍCIO ITEM PRODUCTOS EM DESTAQUE -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="3" src="../img/produtos/galeria-3/produto-1.PNG" alt="">
+                    </a>
+                    <h4>iPhone 14 Pro</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>1 132 400,00 AOA</p>
+                </div>
+                <!-- FIM ITEM PRODUCTOS EM DESTAQUE -->
+    
+                <!-- INÍCIO ITEM PRODUCTOS EM DESTAQUE -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="4" src="../img/produtos/galeria-4/produto-1.PNG" alt="iPhone 15 Pro Max">
+                    </a>
+                    <h4>iPhone 15 Pro Max</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>1 217 900,00 AOA</p>
+                </div>
+                <!-- FIM ITEM PRODUCTOS EM DESTAQUE -->
+            </div>
+            <!-- FIM LINHA DOS PRODUCTOS EM DESTAQUE -->
+       
+            <h2 class="titulo">Novos Productos</h2>
+    
+            <!--  INÍCIO LINHA DO CORPPO DOS NOVOS PRODUCTOS-->
+            <div class="linha">
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="5" src="../img/produtos/galeria-5/produto-1.PNG" alt="Samsung Galaxy S24 Ultra">
+                    </a>
+                    <h4>Samsung Galaxy S24 Ultra</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>2 050 900,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS  -->
+    
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS  -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="6" src="../img/produtos/galeria-6/produto-1.png" alt="Smartphone Samsung Galaxy S24">
+                    </a>
+                    <h4>Smartphone Samsung Galaxy S24</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>1 785 060,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS  -->
+    
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="7" src="../img/produtos/produto-7.png" alt="JRZTC Computer Case">
+                    </a>
+                    <h4>JRZTC Computer Case</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>308 920,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+    
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="8" src="../img/produtos/produto-8.png" alt="Nzxt H510 Elite">
+                    </a>
+                    <h4>Nzxt H510 Elite</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>98 725,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="9" src="../img/produtos/produto-9.png" alt="Hyte Y40">
+                    </a>
+                    <h4>Hyte Y40</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>241 237,09 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="10" src="../img/produtos/produto-10.png" alt="Apple Watch Series 8 GPS">
+                    </a>
+                    <h4>Apple Watch Series 8 GPS</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>480 474,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+    
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="11" src="../img/produtos/produto-11.png" alt="">
+                    </a>
+                    <h4>Apple Watch Ultra 2</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>53 072,16 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+    
+                <!-- INÍCIO ITEM DOS NOVOS PRODUCTOS -->
+                <div class="col-4">
+                    <a href="produto.html" title="">
+                        <img data-index="12" src="../img/produtos/produto-12.png" alt="Apple Watch Series 3">
+                    </a>
+                    <h4>Apple Watch Series 3</h4>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p>164 590,00 AOA</p>
+                </div>
+                <!-- FIM ITEM DOS NOVOS PRODUCTOS -->
+            </div>
+            <!-- FIM LINHA DOS DOS NOVOS PRODUCTOS -->
+        </section>
+        <!-- FIM DOS NOVOS PRODUCTOS -->
+    </section>
+    <!-- END OF FEATURED PRODUCTS -->
+
+    <!-- START OF OFFERS-->
+    <section class="ofertas">
+        <div class="corpo-categorias">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="../img/banner-2.png" alt="" class="oferta-img">
+                </div>
+                <div class="col-2">
+                    <p>Nosso produto mais popular</p>
+                    <h1>HP Elite book <br>830 G5 </h1>
+                    <small>Maior qualidade do mercado com um preço justo <br>de modo a levar a qualidade HP até si.</small>
+                    <br> <br> <a href="#" class="btn">Comprar agora &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF OFFERS -->
+
+    <!-- START OF TESTIMONIALS -->
+    <section class="depoimentos">
+        <div class="corpo-categorias">
+            <div class="linha">
+                <!-- INÍCIO ITEM DE DEPOIMENTOS-->
+                <div class="col-3">
+                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
+                    <p> O atendimento é sempre excelente, e sinto que posso confiar plenamente na loja para todas as minhas necessidades tecnológicas. Recomendo a JHF  todos que procuram tecnologia de ponta e um serviço de primeira classe!
+                    </p>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <img src="../img/cliente-1.png" alt="">
+                    <h3>Ling Shan</h3>
+                </div>
+                <!-- FIM ITEM DE DEPOIMENTOS-->
+
+                <!-- INÍCIO ITEM DE DEPOIMENTOS-->
+                <div class="col-3">
+                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
+                    <p>A variedade de produtos e a qualidade são incomparáveis. Encontrei tudo o que precisava na JHF e fiquei impressionada com a durabilidade e eficiência dos itens. Recomendo JHF a todos que buscam inovação e confiabilidade em tecnologia!</p>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <img src="../img/cliente-2.png" alt="">
+                    <h3>Pedro Sobral</h3>
+                </div>
+                <!-- FIM ITEM DE DEPOIMENTOS-->
+
+                <!-- INÍCIO ITEM DE DEPOIMENTOS-->
+                <div class="col-3">
+                    <ion-icon name="ribbon" class="depoimento-icone"></ion-icon>
+                    <p>Comprei um tablet e acessórios na JHF e fiquei encantada com a qualidade e o desempenho. O suporte ao cliente é fantástico e sempre pronto para ajudar. Recomendo JHF para quem valoriza tecnologia confiável e excelente atendimento!</p>
+                    <div class="classificacao">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <img src="../img/cliente-3.png" alt="">
+                    <h3>Ana Clemente</h3>
+                </div>
+                <!-- FIM ITEM DE DEPOIMENTOS-->
+            </div>
+        </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
+
+    <!-- START OF BRANDS -->
+    <section class="marcas">
+        <div class="corpo-categorias">
+            <div class="linha">
+                <div class="col-5">
+                    <img src="../img/marca-1.png" alt="HP">
+                </div>
+
+                <div class="col-5">
+                    <img src="../img/marca-2.png" alt="Samsung">
+                </div>
+
+                <div class="col-5">
+                    <img src="../img/marca-3.png" alt="Xiaomi">
+                </div>
+
+                <div class="col-5">
+                    <img src="../img/marca-4.png" alt="JBL">
+                </div>
+
+                <div class="col-5">
+                    <img src="../img/marca-5.png" alt="Apple">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF BRANDS -->
+
+    <!-- START OF FOOTER -->
+    <section class="rodape">
+        <div class="container">
+            <div class="linha">
+                <div class="rodape-col-1">
+                    <h3>Baixe o nosso app</h3>
+                    <p>Baixe nosso aplicativo nas melhores plataformas</p>
+                    <div class="app-logo">
+                        <img src="../img/google.png" alt="">
+                        <img src="../img/apple.png" alt="">
+                    </div>
+                </div>
+                <div class="rodape-col-2">
+                    <img src="../img/logo-2.png" alt="">
+                    <p>Para mais informações sobre a loja considere enviar um email ao apoio ao cliente.</p>
+                </div>
+                <div class="rodape-col-3">
+                    <h3>Apoio ao cliente </h3>
+                    <ul>
+                        suporte@jhf.co.ao
+                    </ul>
+                </div>
+                <div class="rodape-col-4">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="direitos">
+            &#160; Todos os direitos reservados a insidePc
+        </p>
+        
+    </section>
+    <!-- END OF FOOTER -->
+
+    <script type="módulo" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/item-produto.js"></script>
+</body>
+</html>

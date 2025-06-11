@@ -1,0 +1,45 @@
+.banner {
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-fonte);
+}
+
+.banner p {
+    color: var(--cor-fonte);
+}
+
+.menu-celular {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+a.carrinho-de-compras, .menu-celular{
+    align-self: flex-end;
+}

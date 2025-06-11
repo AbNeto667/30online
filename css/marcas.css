@@ -1,0 +1,19 @@
+.marcas {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
