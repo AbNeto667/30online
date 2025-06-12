@@ -9,11 +9,11 @@
 :root {
     --cor-padrao: #ffea00;
     --cor-padrao-hover: #ffae00;
-    --cor-fonte: #fff;
+    --cor-fonte: #000000;
     --cor-fonte-p: #555;
-    --cor-btn: #000000;
+    --cor-btn: #ffffff;
     --cor-btn-hover: #8f8f8f;
-    --cor-btn-fonte: #000000;
+    --cor-btn-fonte: #ffffff;
     --cor-fonte-corpo: #555;
     --cor-fonte-corpo-leve: #777;
 }
@@ -150,3 +150,6 @@ h4 {
     color: var(--cor-btn-fonte);
 }
 
+.corpo-categorias{
+    background;: var(--cor-fonte)
+}
