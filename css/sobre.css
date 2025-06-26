@@ -1,0 +1,75 @@
+:root {
+    --cor-btn-fonte: #000;
+    --cor-padrao: #000;
+    --cor-fonte: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.novoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.novoMenu .logo img {
+    display: block;
+}
+
+.novoMenu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.novoMenu nav li a {
+    text-decoration: none;
+    color: var(--cor-btn-fonte);
+    font-weight: 500;
+    transition: border-bottom 0.3s ease;
+}
+
+.novoMenu nav li a:hover {
+    border-bottom: 2px solid var(--cor-btn-fonte);
+}
+
+.sobre-section,
+.contactos {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.sobre-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contactos h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contactos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contactos ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 40px;
+}
