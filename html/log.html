@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tela de Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: border 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #2575fc;
+      outline: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: #2575fc;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #1a5fd6;
+    }
+
+    .error-message {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login Seguro</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Email</label>
+        <input type="email" id="username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" required />
+      </div>
+
+      <button type="submit" class="login-btn">Entrar</button>
+      <p id="errorMessage" class="error-message">Usuário ou senha incorretos!</p>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const errorMessage = document.getElementById("errorMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("username").value;
+      const senha = document.getElementById("password").value;
+
+      // Simulação de login correto
+      if (email === "admin@exemplo.com" && senha === "1234") {
+        // Armazenar localmente
+        localStorage.setItem("emailSalvo", email);
+        localStorage.setItem("senhaSalva", senha); // ⚠ Apenas para testes
+
+        alert("Login bem-sucedido! Dados salvos localmente.");
+        errorMessage.style.display = "none";
+      } else {
+        errorMessage.style.display = "block";
+      }
+    });
+  </script>
+
+</body>
+</html>
