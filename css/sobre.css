@@ -1,25 +1,22 @@
-:root {
-    --cor-btn-fonte: #000;
-    --cor-padrao: #000;
-    --cor-fonte: #fff;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .novoMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-    background-color: white;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .novoMenu .logo img {
-    display: block;
+    width: 75px;
 }
 
 .novoMenu nav ul {
@@ -30,46 +27,34 @@ body {
     padding: 0;
 }
 
-.novoMenu nav li a {
+.novoMenu nav ul li a {
     text-decoration: none;
-    color: var(--cor-btn-fonte);
-    font-weight: 500;
-    transition: border-bottom 0.3s ease;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 3px;
 }
 
-.novoMenu nav li a:hover {
-    border-bottom: 2px solid var(--cor-btn-fonte);
+.novoMenu nav ul li a:hover {
+    border-bottom: 2px solid #000;
 }
 
-.sobre-section,
-.contactos {
-    max-width: 900px;
+.novoMenu .carrinho-link img {
+    width: 30px;
+}
+
+.sobre-section, .contactos {
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-.sobre-section h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.contactos h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.contactos ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contactos ul li {
-    margin-bottom: 8px;
+.sobre-section h1, .contactos h2 {
+    color: #222;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #eee;
     margin-top: 40px;
 }
